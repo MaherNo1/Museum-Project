@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{ 
+    --primaryColor: #6A5446;      
+    --secondaryColor: #BA9F85;    
+    --lightColor: #ffffff ;       
+    --bgColor: #D3C5B4;         
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--bgColor);
+}
+/* header section starts */
+header{
+    width: 100%;
+    position: fixed;/* Keep the header fixed at the top even when scrolling*/
+    top: 0;    /* Position the header at the very top of the page */
+    left: 0;   /* Align the header to the left edge of the screen */
+    right: 0;  /* Align the header to the right edge of the screen */
+    z-index: 1000; /* Place the header above most other elements */
+    display: flex; /* enables Flexbox layout, allowing flexible alignment and distribution of child elements. */
+    justify-content: space-between;/* Space out items to the left and right */
+    align-items: center;
+    padding: 10px 100px;
+}
+
+.logo{
+    text-decoration : none;
+    color: var(--lightColor);
+    font-weight: 700;
+    font-size: 1.8em;   
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    color: var(--lightColor);
+    font-weight: 500;
+    font-size: 1.6rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.navbar a:hover {
+    color: var(--secondaryColor);
+}
+
+/* dropdowm menu */
+
+.dropdown-menu a {
+    display: block;
+    color: var(--primaryColor);
+    padding: 8px 15px;
+    transition:  0.2s ease;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.dropdown a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.dropdown a:hover {
+    color: var(--secondaryColor);
+}
+
+.navbar a, 
+.dropdown a, 
+.dropdown-menu a, 
+.menu-dropdown a {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+ /* icons */
+ .icons {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+}
+
+/*  menu icon  */
+.menu-dropdown a {
+    display: block;
+    color: var(--primaryColor);
+    padding: 8px 15px;
+    transition: 0.2s ease;
+    white-space: nowrap;
+}
+
+.menu-dropdown a:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background: rgba(255, 255, 255, 0.567);
+    min-width: 300px;
+    width: max-content;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(79, 76, 76, 0.2);
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    padding: 10px;
+    margin-top: 5px;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+
+
+/* Search Container */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #search-icon {
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    color: #2d1805;
+  }
+  
+  #search-bar {
+    width: 0;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid var(--secondaryColor);
+    border-radius: 20px;
+    transition: width 0.4s ease-in-out, opacity 0.3s ease;
+    opacity: 0;
+    outline: none;
+  }
+  
+  
+  #search-bar.active {
+    width: 300px;
+    opacity: 1;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:-4px;
+  }
+
+.menu-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.567);
+    min-width: 160px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(79, 76, 76, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    padding: 10px;
+    margin-top: 5px;
+    z-index: 1000;
+}
+
+.icons:hover .menu-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.menu-dropdown li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+#menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    color: var(--lightColor);
+}
+
+#menu-btn:hover {
+    color: var(--secondaryColor);
+}
+
+.icons div{
+    color: var(--lightColor);
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+}
+
+.icons div:hover{
+    color: var(--secondaryColor);
+}
+ 
+
+/* Gallery section starts */
+
+
+.home{
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content, .slide{
+    width: 100%;
+    height: 100vh;
+}
+
+.slide{
+    position: relative;
+}
+
+.slide::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.slide .image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.slide img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.slide .image-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Shift the element back to center itself exactly */
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+.image-data h2 {
+    margin-bottom: 40px;
+}
+
+ /*museum name*/
+
+.image-data span.text{       
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--bgColor);
+}
+
+.image-data h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--lightColor);
+}
+
+ /*button styling*/
+
+a.button{       
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--secondaryColor);
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 25px;
+    position: relative;
+    top: 30px;
+    transition: all 0.3s ease; /* Apply a smooth transition to all properties that change, lasting 0.3 seconds with an 'ease' timing function */
+}
+
+a.button:hover{
+    background-color: var(--primaryColor);
+}
+
+/* cards section  */
+
+.museums{
+    margin: 100px 50px;
+    background: var(--bgColor);
+}
+
+.museums .card{
+    margin-top: 30px ;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.museum-img img {
+    width: 100%;
+    object-fit: cover; 
+}
+
+.museum-card{
+  background-color: var(--lightColor);
+  border: 1px solid var(--lightColor);
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.5s ease;
+}
+
+.museum-card:hover{
+    transform: scale(1.1) ;
+}
+
+.museum-card:hover .museum-img{
+   opacity: 0.9;
+}
+
+span{
+    color: var(--secondaryColor);
+    margin-right: 10px;
+    font-size: 0.85em; 
+}
+
+.museum-info{
+    padding: 1em;
+}
+
+.museum-title {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    padding-top: 10px;
+}
+
+.museum-category{
+    font-size: 0.8em ;
+}
+
+.more-details{
+    text-decoration: none;
+    color:var(--secondaryColor);
+    margin-left: 10px; 
+    font-size: 0.76em; 
+}
+
+.more-details:hover{
+    color: var(--primaryColor);
+}
+
+/* footer */
+footer {
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-content {
+    max-width: 800px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+    /* Dark /Light mode */
+    
+.theme-switch-btn {
+    width: 100%;
+    padding: 8px 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--primaryColor);
+    transition: background-color 0.2s ease;
+}
+
+.theme-switch-btn:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.theme-switch-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--primaryColor);
+}
+
+.theme-switch-btn svg:first-child {
+    display: none;
+}
+
+.dark .theme-switch-btn svg:last-child {
+    display: none;
+}
+
+.dark .theme-switch-btn svg:first-child {
+    display: block;
+}
+
+.dark {
+    --primaryColor: #4A3A30;
+    --secondaryColor: #8A7A65;
+    --lightColor: #f9eee9;
+    --bgColor: #2A1A0F;
+    color: var(--lightColor);
+}
+
+.dark .navbar a,
+.dark .dropdown a,
+.dark .menu-dropdown a {
+    color: var(--lightColor);
+}
+
+.dark .museum-card {
+    background-color: #3A2A1F;
+    border-color: #4A3A2F;
+}
+
+.dark .museum-category,
+.dark .museum-title span {
+    color: var(--lightColor);
+}
+
+.dark .more-details {
+    color: var(--secondaryColor);
+}
+
+.dark .more-details:hover {
+    color: var(--lightColor);
+}
+
+.dark .image-data span.text,
+.dark .image-data h2 {
+    color: var(--lightColor);
+}
+
+.dark body {
+    background-color: #2A1A0F;
+}
+
+.dark .slide::before {
+    background-color: rgba(0,0,0,0.5);
+}
+
+

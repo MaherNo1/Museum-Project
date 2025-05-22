@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+  --primaryColor: #6A5446;      
+  --secondaryColor: #BA9F85;    
+  --lightColor: #ffffff ;       
+  --bgColor: #D3C5B4;        
+}
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+  outline: none; 
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+.logo{
+    text-decoration : none;
+    color: var(--lightColor);
+    font-weight: 700;
+    font-size: 1.8em;   
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.navbar a{
+    text-decoration: none;
+    margin: 0 1rem;
+    color:var(--lightColor);
+    font-weight: 500;
+    font-size: 1.6rem; 
+}
+
+.navbar a:hover {
+    color: var(--secondaryColor);
+}
+
+/* Dropdown menu styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown  a {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.567);
+    min-width: 300px;
+    width: max-content;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(79, 76, 76, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    padding: 10px;
+    margin-top: 5px;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    text-decoration: none;
+    color: var(--primaryColor);
+    padding: 8px 15px;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.caret {
+    margin-left: 5px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--lightColor);
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .caret {
+    transform: rotate(180deg);
+}
+
+/* Menu icon dropdown styles */
+.icons {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.567);
+    min-width: 160px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(79, 76, 76, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    padding: 10px;
+    margin-top: 5px;
+    z-index: 1000;
+}
+
+.icons:hover .menu-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.menu-dropdown li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.menu-dropdown a {
+    display: block;
+    text-decoration: none;
+    color: var(--primaryColor);
+    padding: 8px 15px;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+    
+}
+
+.menu-dropdown a:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+#menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    color: var(--lightColor);
+}
+
+#menu-btn:hover {
+    color: var(--secondaryColor);
+}
+
+.icons div{
+    color: var(--lightColor);
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+}
+
+.icons div:hover{
+    color: var(--secondaryColor);
+}
+.main-content{
+    max-width:800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.title1 p {
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+  font-weight: bold;
+  font-size: 5em;
+  
+}
+
+.titletwo {
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;;  
+  font-size: 3em;
+  font-weight: bold;
+}
+
+
+
+
+
+.texttwo {
+  text-align: left;
+  width: fit-content;
+  font-size: 1em;
+}
+
+
+.location-card {
+  
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+}
+.location-card a {
+  color: #007BFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.product{
+    gap: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+    
+}
+.about-info{
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color:#fae3c2;
+    border: 10px solid #f8deb9;
+    padding: 30px;
+    text-align: left;
+    max-width: 700px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: #4E3B31;
+    font-family: system-ui;
+}
+
+.opening-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;   
+  gap: 10px;
+  margin: 15px 0;
+  font-weight: bold;
+  background-color:var(--lightColor)
+}
+
+.opening-hours {
+  color: #4E3831; 
+  margin: 0;
+  font-size: 1rem;
+}
+body{
+    background: var(--bgColor);
+  }
+  
+  .musv{
+    display: flex;
+    align-self: center;
+    justify-content:center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .musv video{
+    width: 100%;
+    height: 100vh;
+  }
+  
+
+  .gallery {
+    margin-bottom: 50px;
+  }
+  .gallery p {
+    font-size: 3em;
+
+  }
+  
+.gallery h3,.location h3,.tickets h3{
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #624c41;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 20px;
+    font-weight: bold;
+  }
+  
+  .gallery img {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;  
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+.phto{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    gap: 10px;
+}
+.phto img{
+    height: 180px;
+    object-fit: cover;
+}
+.tickettext{
+  font-size: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  padding: 20px;
+  font-weight: bold;
+
+
+}
+.ticket-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+  }
+  
+  .ticket-card {
+    background-color:#fae3c2;
+    color: #4E3B31;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    
+  }
+
+  .ticket-card:hover {
+    transform: translateY(-10px);
+}
+  
+  .ticket-card h4 {
+    margin-bottom: 10px;
+  }
+  
+  .ticket-card p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .ticket-card button {
+    padding: 10px 20px;
+    background-color: #4E3B31;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ticket-card button:hover {
+    background-color: #3a2e26;
+
+  }
+  .opening-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  
+  .opening-hours {
+    color: #4E3831; 
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .status-badge {
+    background-color: #4c98af; 
+    color: white;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .status-badge.closed {
+    background-color: #0a0a0a; }
+  footer {
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+.footer-content {
+    max-width: 800px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+.theme-switch-btn {
+  width: 100%;
+  padding: 8px 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--primaryColor);
+  transition: background-color 0.2s ease;
+}
+
+.theme-switch-btn:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.theme-switch-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--primaryColor);
+}
+
+.theme-switch-btn svg:first-child {
+  display: none;
+}
+
+.dark .theme-switch-btn svg:last-child {
+  display: none;
+}
+
+.dark .theme-switch-btn svg:first-child {
+  display: block;
+}
+
+.dark {
+  --primaryColor: #4A3A30;
+  --secondaryColor: #8A7A65;
+  --lightColor: #f9eee9;
+  --bgColor: #2A1A0F;
+  color: var(--lightColor);
+}
+
+.dark .navbar a,
+.dark .dropdown a,
+.dark .menu-dropdown a {
+  color: var(--lightColor);
+}
+
+.dark .welcome-section {
+  background-color: #3A2A1F;
+}
+
+.dark .welcome-section h1,
+.dark .welcome-section p {
+  color: var(--lightColor);
+}
+
+.dark .gallery-wrapper {
+  background-color: #3A2A1F;
+}
+
+.dark .gallery-track {
+  background-color: #3A2A1F;
+}
+
+.dark .gallery-buttons button {
+  background-color: #4A3A2F;
+  color: var(--lightColor);
+}
+
+.dark .gallery-buttons button:hover {
+  background-color: #5A4A3F;
+}
+
+.dark .packages-section {
+  background-color: #3A2A1F;
+}
+
+.dark .card {
+  background-color: #4A3A2F;
+  border-color: #5A4A3F;
+}
+
+.dark .card h3,
+.dark .card p {
+  color: var(--lightColor);
+}
+
+.dark .card button {
+  background-color: #5A4A3F;
+  color: var(--lightColor);
+}
+
+.dark .card button:hover {
+  background-color: #6A5A4F;
+}
+
+.dark body {
+  background-color: #2A1A0F;
+}
+
+.reviews {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.reviews h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.review {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border-left: 4px solid var(--primaryColor);
+}
+
+.review h3 {
+  margin: 0 0 5px 0;
+  color: var(--primaryColor);
+}
+
+.rating {
+  color: #ffc107;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.review p {
+  margin: 10px 0;
+  line-height: 1.5;
+  color: #555;
+}
+
+.date {
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+
+/* Image Slider Styles */
+.slider-container {
+  max-width: 800px;
+  margin: 30px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 400px;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slider-nav button {
+  background: var(--primaryColor);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slider-nav button:hover {
+  background: #6b5d36;
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#search-icon {
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  color: #2d1805;
+}
+
+#search-bar {
+  width: 0;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid var(--secondaryColor);
+  border-radius: 20px;
+  transition: width 0.4s ease-in-out, opacity 0.3s ease;
+  opacity: 0;
+  outline: none;
+}
+
+
+#search-bar.active {
+  width: 300px;
+  opacity: 1;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+margin-right: 5px;
+
+}
+
+.ticket-card a{
+  text-decoration: none;
+  color: var(--lightColor);
+}

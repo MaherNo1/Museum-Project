@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="museum-2.css">
+	    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="icon" href="logo/logo.png">
+        <title>The Egyptian Museum</title>
+    </head>
+    
+
+
+    <body>
+
+          <!-- header section starts -->
+    <header>
+        <a href="homep.html" class="logo">TicketToHistory</a>
+
+        <nav class="navbar">
+            <a href="ticketp.html">Buy Tickets</a>
+            <li class="dropdown">
+                <a href="#">Explore the Museum</a>
+                <ul class="dropdown-menu">
+                    <li><a href="museum-1.html">The National Museum of Egyptian Civilization</a></li>
+                    <li><a href="museum-2.html">The Egyptian Museum</a></li>
+                    <li><a href="museum-3.html">Abdeen Palace</a></li>
+                    <li><a href="museum-4.html">Luxor Museum</a></li>
+
+                </ul>
+            </li>
+            <a href="VisitUs.html">Visit Us</a>
+            <a href="contact.html">Contact Us</a>
+
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <ul class="menu-dropdown">
+                <li><a href="sign-in.html">Sign In</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+                <li><a href="homep.html" class="Sign-Out">Sign Out</a></li>
+                <li>
+                    <li>
+                        <div class="search-container">
+                            <span class="material-symbols-outlined" id="search-icon"><i class='bx bx-search'></i></span>
+                            <input type="search" id="search-bar" placeholder="Search...">
+                        </div>
+                        <button id="theme-switch" class="theme-switch-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3E2A47">
+                                <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3E2A47">
+                                <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
+                            </svg>
+                        </button>
+                    </li>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- header section ends-->
+     
+
+
+
+        <div class="image-container">
+            <img src="museum-2/1.png" width="1264" height="100%"style="display: block;">
+            <div class="image-text">THE <br>EGYPTIAN MUSEUM</div>
+            <div class="imagetext"><p>The Egyptian Museum in Cairo (EMC) is the oldest archaeological museum <br>in the Middle East,housing over 170,000 artefacts. <br>It has the largest collection of Pharaonic antiquities in the world.
+            <br>The Museum's exhibits span the Pre-Dynastic Period till the Graeco-Roman Era (c. 5500 BC - AD 364).</p>
+            <div class="audio-location">
+            <a href="https://maps.app.goo.gl/CSUZ93dcr8jhbSnQ6" target ="_blank" class="button-link">The Musuem's Location</a> 
+            <audio controls>
+                <source src="museum-2/egymueseumaudio.mp3" type="audio/mpeg">
+              </audio>
+              </div>
+        </div>
+        
+        <div class ="texttwo">
+            <h1>Gallery</h1>
+        </div>
+        <div class="gallery1">
+            <div class="video-wrapper">
+                <video src="museum-2/egymuseum.mp4" autoplay muted loop></video>
+                <button class="video-btn" onclick="togglePlay()">Pause</button>
+                </div>
+            <img src="museum-2/egymuseum6.jpg" >
+            <img src="museum-2/egymuseum5.jpg" >
+            <img src="museum-2/egymuseum4.jpg" >
+            <img src="museum-2/egymuseum8.jpg" >
+            <img src="museum-2/egymuseum3.jpg">
+            <img src="museum-2/egymuseum7.jpg">
+            <img src="museum-2/egyptmuseum.jpg">
+        </div>
+       
+        <div class="textthree"><h1>Masterpieces</h1></div>
+        <div class=gallery2>
+        <div class="item">
+            <img src="museum-2/Tutankhamon-mask.png">
+            <p>Mask of Tutankhamon</p>
+        </div>
+        <div class="item">
+            <img src="museum-2/Ramesses II child.png">
+            <p>Ramesses II Child and The God Horan</p>
+        </div>
+        <div class="item">
+            <img src="museum-2/egyptian_triad.png">
+            <p>Menkaure Traids</p>
+        </div> 
+    </div>
+       
+    <div class="ticket-section">
+        <h1>Ticket Prices</h1>
+        <div class="card-container">
+            <div class="ticket-card">
+
+                <div class="card-content">
+                    <h2>Student <br>Package<br>(Egyptian)</h2>
+                    <p class="price"><b>EGP 40</b></p>
+                    <p class="description">Step into the past with a ticket to Egypt's greatest museums</p>
+                    <a href="ticketp.html" class="buy-btn">Buy Now</a>
+                </div>
+
+            </div>
+
+            <div class="ticket-card">
+
+                <div class="card-content">
+                    <h2>Student <br>Package<br>(Foreigner)</h2>
+                    <p class="price"><b>EGP 80</b></p>
+                    <p class="description">Step into the past with a ticket to Egypt's greatest museums</p>
+                    <a href="ticketp.html" class="buy-btn">Buy Now</a>
+                </div>
+
+            </div>
+
+            <div class="ticket-card">
+                <div class="card-content">
+                    <h2>Adult<br>Package<br>(Egyptian)</h2>
+                    <p class="price"><b>EGP 250</b></p>
+                    <p class="description">Step into the past with a ticket to Egypt's greatest museums</p>
+                    <a href="ticketp.html" class="buy-btn">Buy Now</a>
+                </div>
+            </div>
+            <div class="ticket-card">
+                <div class="card-content">
+                    <h2>Adult <br>Package<br>(Foreigner)</h2>
+                    <p class="price"><b>EGP 500</b></p>
+                    <p class="description">Step into the past with a ticket to Egypt's greatest museums</p>
+                    <a href="ticketp.html" class="buy-btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Dark mode functionality
+        let dark = localStorage.getItem('dark');
+        const themeSwitch = document.getElementById('theme-switch');
+
+        const enableDark = () => {
+            document.body.classList.add('dark');
+            localStorage.setItem('dark', 'active');
+        }
+
+        const disableDark = () => {
+            document.body.classList.remove('dark');
+            localStorage.setItem('dark', null);
+        }
+
+        // Initialize theme based on localStorage
+        if (dark === 'active') {
+            enableDark();
+        }
+
+        // Add click event listener
+        themeSwitch.addEventListener('click', () => {
+            dark = localStorage.getItem('dark');
+            if (dark !== 'active') {
+                enableDark();
+            } else {
+                disableDark();
+            }
+        });
+
+        // Video play/pause functionality
+        function togglePlay() {
+            const video = document.querySelector('.video-wrapper video');
+            const btn = document.querySelector('.video-btn');
+            if (video.paused) {
+                video.play();
+                btn.textContent = 'Pause';
+            } else {
+                video.pause();
+                btn.textContent = 'Play';
+            }
+        }
+
+        // Ticket purchase confirmation
+        document.querySelectorAll('.buy-btn').forEach(button => {
+            button.addEventListener('click', function(event) {
+                const confirmed = confirm('Do you want to proceed to the ticket purchase page?');
+                if (!confirmed) {
+                    event.preventDefault();
+                }
+            });
+        });
+
+           // ############################## Search Bar Functionality ##############################
+
+// Toggle the visibility of the search bar when the search icon is clicked
+document.getElementById("search-icon")
+    .addEventListener("click", function () {
+        let searchBar = document.getElementById("search-bar"); // Get the search bar element
+        searchBar.classList.toggle("active"); // Show or hide the search bar
+        searchBar.focus(); // Automatically focus on the input field
+    });
+
+// Perform search and redirect to corresponding museum pages when pressing Enter
+document.getElementById("search-bar").addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        let query = event.target.value.trim().toLowerCase(); // Get the typed input and convert to lowercase
+
+        // Redirect to specific museum page based on keyword
+        if (query.includes("civilization") || query.includes("national") || query.includes("القومي") || query.includes("الحضارة")) {
+            window.location.href = "museum-1.html";
+        } else if (query.includes("egyptian museum") || query.includes("المتحف المصري") || query.includes("egyptian")) {
+            window.location.href = "museum-2.html";
+        } else if (query.includes("abdeen") || query.includes("abdeen palace") || query.includes("قصر عابدين")) {
+            window.location.href = "museum-3.html";
+        } else if (query.includes("luxor") || query.includes("متحف الأقصر") || query.includes("الأقصر")) {
+            window.location.href = "museum-4.html";
+        } else {
+            alert("Sorry, no matching result found. Please try another keyword.");
+        }
+    }
+});
+    </script>
+      
+      <div class="reviews">
+        <h2>What The Visitors Say</h2>
+        <div class="review-list">
+          <div class="review">
+            <p>"Absolutely breathtaking! The Egyptian Museum offers a truly magical experience. I was amazed by the richness of the artifacts, especially the golden mask of Tutankhamun. The staff were helpful, and everything was well-organized. A must-visit if you're ever in Cairo!"</p>
+            <h4>— Noura M.</h4>
+          </div>
+          <div class="review">
+            <p>"The museum has an impressive collection, but the layout could be improved. Some of the labels were missing or hard to read, and it felt a bit crowded. Still, it's worth a visit if you're into ancient history."</p>
+            <h4>— Kareem D.</h4>
+          </div>
+          <div class="review">
+            <p>"Honestly, I was disappointed. The place felt outdated and unorganized. There was little explanation for many of the artifacts, and it was too hot inside. I expected more from such a famous museum.."</p>
+            <h4>— Amina K.</h4>
+          </div>
+        </div>
+    </div>
+      
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content">
+          <p>© 2025 Museums Ticket Booking. All rights reserved.</p>
+          <p>Designed with passion for cultural explorers.</p>
+        </div>
+      </footer>
+      
+    <!-- end footer -->
+
+    
+    </body>
+
+
+</html>

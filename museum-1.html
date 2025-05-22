@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The National Museum of Egyptian Civilization</title>
+    <link rel="icon" href="logo/logo.png">
+	<script src="particles.min.js"></script>
+	<script src="app.js"></script>
+	<link rel="stylesheet" href="museum-1.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--<script type="text/javascript" src="IT_2.js"></script> -->
+</head>
+<body >
+	<div id="particles-js"></div>
+	   <!-- header section starts -->
+       <header>
+        <a href="homep.html" class="logo">TicketToHistory</a>
+
+        <nav class="navbar">
+            <a href="ticketp.html" style="font-size:0.95em;">Buy Tickets</a>
+            <li class="dropdown">
+                <a href="#" style="font-size:0.95em;">Explore the Museum</a>
+                <ul class="dropdown-menu">
+                    <li><a href="museum-1.html">The National Museum of Egyptian Civilization</a></li>
+                    <li><a href="museum-2.html">The Egyptian Museum</a></li>
+                    <li><a href="museum-3.html">Abdeen Palace</a></li>
+                    <li><a href="museum-4.html">Luxor Museum</a></li>
+                </ul>
+            </li>
+            <a href="VisitUs.html" style="font-size:0.95em;">Visit Us</a>
+            <a href="contact.html" style="font-size:0.95em;">Contact Us</a>
+
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <ul class="menu-dropdown">
+                <li><a href="sign-in.html">Sign In</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+                <li><a href="homep.html" class="Sign-Out">Sign Out</a></li>
+                <li>
+                    <div class="search-container">
+                        <span class="material-symbols-outlined" id="search-icon"><i class='bx bx-search'></i></span>
+                        <input type="search" id="search-bar" placeholder="Search...">
+                    </div>
+                    <button id="theme-switch" class="theme-switch-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3E2A47">
+                            <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3E2A47">
+                            <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+<!--            <button id="theme-switch" style="margin-right: 10px;"> <svg xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="15px" fill="#e3e3e3">
+                    <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/> </svg> 
+                   <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#e3e3e3"> <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/> </svg> 
+            </button> -->
+           
+    </header>
+    <!-- header section ends-->
+     
+    <div class="main-content">
+        <div class="welcome-section">
+            <h1 style="font-size: 1.8em;">Welcome to the NMEC</h1>
+            <p>
+                <br>The National Museum of Egyptian Civilization (NMEC) is a large <br>
+                museum located in Old Cairo, a district of Cairo, Egypt. <br>
+                Partially opened in 2017, the museum was officially inaugurated <br>
+                on 3 April 2021, with the moving of 22 mummies, including 18 kings <br>
+                and four queens, from the Egyptian Museum in central Cairo,<br> 
+                in an event termed the Pharaohs' Golden Parade. <br>
+                The museum displays a collection of 50,000 artifacts, <br>
+                presenting the Egyptian civilization from <br>
+                prehistoric times to the Modern era. <br><br>
+            </p>
+            <audio controls src="museum-1/museum_audio.mp3"></audio><br><br><br>
+            <button class="see_more"><a href="https://en.wikipedia.org/wiki/National_Museum_of_Egyptian_Civilization" target="_blank" class="read-more">Read more about NMEC</a></button>
+        </div>
+        <!-- Gallery container -->
+        <div class="gallery-wrapper">
+            <!-- Buttons to move the gallery -->
+
+            <div class="gallery-buttons left-button">
+                <button onclick="moveSlide(-1)"><i class='bx bx-chevron-left'></i></button>
+            </div>
+            <div class="gallery-container">
+                <!-- Track that moves left/right -->
+                <div class="gallery-track" id="track">
+                    <!-- Gallery images -->
+                    <img src="museum-1/image1.jpg" alt="Image 1">
+                    <img src="museum-1/image2.jpg" alt="Image 2">
+                    <img src="museum-1/image3.jpg" alt="Image 3">
+<!--                    <img src="museum-1/image4.jpg" alt="Image 4"> -->
+                    <video controls style="width:100%; max-width:600px;">
+                        <source src="museum-1/museum_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+             <!-- Buttons to move the gallery -->
+              
+            <div class="gallery-buttons right-button">
+                <button onclick="moveSlide(1)"><i class='bx bx-chevron-right'></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="packages-section">
+        <h1>Ticket Prices</h1>
+        <div class="card-container">
+            <div class="card">
+                <h3>Student <br>Package<br>(Egyptian)</h3>
+                <p><br>Ticket's price: 40.00EGP</p>
+                <br><button><a href="ticketp.html">Book now</a></button>
+            </div>
+            <div class="card">
+                <h3>Student <br>Package<br>(Foreigner)</h3>
+                <p><br>Ticket's price: 250.00EGP</p>
+                <br><button><a href="ticketp.html">Book now</a></button>
+            </div>
+            <div class="card">
+                <h3>Adult<br>Package<br>(Egyptian)</h3>
+                <p><br>Ticket's price: 80.00EGP</p>
+                <br><button><a href="ticketp.html">Book now</a></button>
+            </div>
+            <div class="card">
+                <h3>Adult <br>Package<br>(Foreigner)</h3>
+                <p><br>Ticket's price: 500.00EGP</p>
+                <br><button><a href="ticketp.html">Book now</a></button>
+            </div>
+            
+        </div>
+    </div>
+    <div>
+        <h1 class="h-feed">Our Customers' Feedback</h1>
+        <div class="card-container" style="margin-left: 260px; margin-bottom: 20px;">
+            <div class="card" style="width: 320px;">
+                <img src="museum-1/review_2.png" style="width: 75px; height: 80px; float: left;">
+                <div style="float: right;">
+                    <h4 style="font-size:0.7em">From: <a href="#" style="color: rgb(211, 197, 180 / 1.0);">moro_0607</a> | <img src="museum-1/5_stars2.png" style="width: 65px; height: 13px;"></h4><br>
+                    <p style="text-align: left; font-size:0.5em">
+                        Really enjoyed the experience <br>
+                        visiting the NMEC. I had a great <br>
+                        holiday with my family, learning <br>
+                        about our glorious history and the <br>
+                        whole trip was awesome. I also like to <br>
+                        thank <a href="">TicketToHistory</a> who was the <br>
+                        main reason to have such a great day!</p>
+                </div>
+            </div>
+            <div class="card" style="width: 320px;">
+                <img src="museum-1/review_2.png" style="width: 75px; height: 80px; float: left;">
+                <div style="float: right;">
+                    <h4 style="font-size:0.7em">From: <a href="#" style="color: rgb(211, 197, 180 / 1.0);">moro_0607</a> | <img src="museum-1/5_stars2.png" style="width: 65px; height: 13px;"></h4><br>
+                    <p style="text-align: left; font-size:0.5em">
+                        Really enjoyed the experience <br>
+                        visiting the NMEC. I had a great <br>
+                        holiday with my family, learning <br>
+                        about our glorious history and the <br>
+                        whole trip was awesome. I also like to <br>
+                        thank <a href="">TicketToHistory</a> who was the <br>
+                        main reason to have such a great day!</p>
+                </div>
+            </div>
+            <div class="card" style="width: 320px;">
+                <img src="museum-1/review_2.png" style="width: 75px; height: 80px; float: left;">
+                <div style="float: right;">
+                    <h4 style="font-size:0.7em">From: <a href="#" style="color: rgb (211, 197, 180 / 1.0)">moro_0607</a> | <img src="museum-1/5_stars.png" style="width: 65px; height: 13px;"></h4><br>
+                    <p style="text-align: left; font-size:0.5em">
+                        Really enjoyed the experience <br>
+                        visiting the NMEC. I had a great <br>
+                        holiday with my family, learning <br>
+                        about our glorious history and the <br>
+                        whole trip was awesome. I also like to <br>
+                        thank <a href="">TicketToHistory</a> who was the <br>
+                        main reason to have such a great day!</p>
+                </div>
+            </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Museums Ticket Booking. All rights reserved.</p>
+            <p>Designed with passion for cultural explorers.</p>
+            <!-- <p id="contact">Contact us: <i class='bx bxl-whatsapp'></i> <i class='bx bxl-instagram' ></i> <i class='bx bxl-facebook-circle'></i> <i class='bx bx-envelope'></i></p> -->
+        </div>
+    </footer>
+
+	<script src="museum-1.js"></script>	
+</body>
+</html>

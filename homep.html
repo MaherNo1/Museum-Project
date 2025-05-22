@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homep.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="logo/logo.png">
+    <title>TicketToHistory</title>
+    <!-- Swiper CSS library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- header section starts -->
+    <header>
+        <a href="homep.html" class="logo">TicketToHistory</a>
+
+        <nav class="navbar">
+            <a href="ticketp.html">Buy Tickets</a>
+            <li class="dropdown">
+                <a href="#">Explore the Museum</a>
+                <ul class="dropdown-menu">
+                    <li><a href="museum-1.html">The National Museum of Egyptian Civilization</a></li>
+                    <li><a href="museum-2.html">The Egyptian Museum</a></li>
+                    <li><a href="museum-3.html">Abdeen Palace</a></li>
+                    <li><a href="museum-4.html">Luxor Museum</a></li>
+                </ul>
+            </li>
+            
+            <a href="VisitUs.html">Visit Us</a>
+            <a href="contact.html">Contact Us</a>
+
+        </nav>
+
+        <div class="icons">
+
+            <div class="fas fa-bars" id="menu-btn"></div>
+
+            <ul class="menu-dropdown">
+                <li><a href="sign-in.html">Sign In</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+                <li><a href="homep.html" class="Sign-Out">Sign Out</a></li>
+                <li>
+
+                    <li>
+                        <div class="search-container">
+                            <span class="material-symbols-outlined" id="search-icon"><i class='bx bx-search'></i></span>
+                            <input type="search" id="search-bar" placeholder="Search...">
+                        </div>
+
+                        <button id="theme-switch" class="theme-switch-btn"> 
+
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3E2A47">
+                                <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3E2A47">
+                                <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
+                            </svg>
+
+                        </button>
+                    </li>
+
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- header section ends-->
+     
+    <!-- home section starts -->
+     
+     <section class="home swiper mySwiper" id="home">
+
+        <!-- div for museum 1 -->
+
+        <div class="content swiper-wrapper">
+
+            <div class="slide swiper-slide">
+                <img src="museums/home 1.jpg" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">The National Museum of Egyption Civiliazation</span>
+                    <h2>
+                        Uncover Egypt's past <br>
+                         all in one place
+                    </h2>
+                    <a href="#museum-1" class="button">Read More</a>
+                </div>
+            </div>
+
+            <!-- div for museum 2 -->
+
+            <div class="slide swiper-slide">
+                <img src="museums/home 2.jpg" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">The Egyptian Museum</span>
+                    <h2>
+                        Step into the world of pharaohs <br> and timeless artifacts
+                    </h2>
+                    <a href="#museum-2" class="button">Read More</a>
+                </div>
+            </div>
+
+            <!-- div for museum 3 -->
+
+            <div class="slide swiper-slide">
+                <img src="museums/home 3.jpg" alt="" class="image3">
+                <div class="image-data">
+                    <span class="text">Abdeen Palace</span>
+                    <h2>
+                        Discover the elegance and legacy <br> of Abdeen Palace
+                    </h2>
+                    <a href="#museum-3" class="button">Read More</a>
+                </div>
+            </div>
+
+                <!-- div for museum 4 -->
+                <div class="slide swiper-slide">
+                    <img src="museum-4/home1.jpg" alt="" class="image3">
+                    <div class="image-data">
+                        <span class="text">Luxor Museum</span>
+                        <h2>
+                            Discover masterpieces <br> of ancient craftsmanship in Luxor
+                        </h2>
+                        <a href="#museum-4" class="button">Read More</a>
+                    </div>
+                </div>
+                
+            
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+     </section>
+     <!-- Home Section Ends -->
+    
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- cards section -->
+     <section class="museums " id="museums">
+
+        <!-- card 1 -->
+        <div class="card">
+            <div class="museum-card" id="museum-1">
+
+                <div class="museum-img">
+                    <img src="museums/museum 01.jpg" alt="">
+                </div>
+
+                <div class="museum-info">
+                    <p class="museum-category">Located in Cairo, it showcases Egypt's rich history through a vast collection of artifacts, highlighting ancient Egyptian civilization and its development over the centuries. </p>
+                    <strong class="museum-title">
+                        <span>The National Museum <br>of Egyption Civiliazation</span>
+                        <a href="museum-1.html" class="more-details">More Details</a>
+                    </strong>
+                </div>
+                
+            </div>
+      
+        <!-- card 2 -->
+        
+            <div class="museum-card" id="museum-2">
+                <div class="museum-img">
+                    <img src="museums/museum 02.jpg">
+                </div>
+                <div class="museum-info">
+                    <p class="museum-category">In Cairo, it holds the world's largest collection of ancient Egyptian artifacts, including Tutankhamun's treasures, offering a fascinating look into Egypt's rich history.</p>
+                    <strong class="museum-title">
+                        <span>The Egyptian Museum</span>
+                        <a href="museum-2.html" class="more-details">More Details</a>
+                    </strong>
+                </div>
+            </div>
+        
+
+
+        <!-- card 3 -->
+        
+            <div class="museum-card" id="museum-3">
+                <div class="museum-img">
+                    <img src="museums/museum 3.jpg" alt="">
+                </div>
+                <div class="museum-info">
+                    <p class="museum-category">
+                        Located in central Cairo, Abdeen Palace is a 19th-century royal residence known for its magnificent architecture and rich history. It now houses museums featuring royal artifacts, weapons, and international gifts.
+                    </p>
+                    <strong class="museum-title">
+                        <span>Abdeen Palace</span>
+                        <a href="museum-3.html" class="more-details">More Details</a>
+                    </strong>
+                </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="museum-card" id="museum-4">
+                <div class="museum-img">
+                    <img src="museum-4/home2.jpg">
+                </div>
+                <div class="museum-info">
+                    <p class="museum-category">
+                        Located on the east bank of the Nile, Luxor Museum displays a refined collection from the New Kingdom, including pharaoh statues, royal mummies, and daily life artifacts. Its elegant layout offers a rich cultural experience.</p>
+                    <strong class="museum-title">
+                        <span>Luxor Museum</span>
+                        <a href="museum-4.html" class="more-details">More Details</a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!--end cards section -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content">
+          <p>© 2025 Museums Ticket Booking. All rights reserved.</p>
+          <p>Designed with passion for cultural explorers.</p>
+        </div>
+      </footer>
+    <!-- end footer -->
+
+
+
+     <!-- JS Link -->
+     <script src="homep.js"></script>
+</body>
+</html>

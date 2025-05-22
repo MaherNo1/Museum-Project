@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+:root {
+    --primaryColor: #6A5446;
+    --secondaryColor: #BA9F85;
+    --lightColor: #f9eee9;
+    --bgColor: #fff7ec;
+    --padding: 14px;
+}
+
+/* Theme switch button */
+.theme-switch-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.theme-switch-btn svg {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+}
+
+.theme-switch-btn .sun-icon {
+    display: block;
+}
+
+.theme-switch-btn .moon-icon {
+    display: none;
+}
+
+.theme-switch-btn.active .sun-icon {
+    opacity: 0;
+    display: block;
+}
+
+.theme-switch-btn.active .moon-icon {
+    opacity: 1;
+    display: block;
+    color: #2c211b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    
+  }
+  
+  .logo{
+    text-decoration : none;
+    color: var(--lightColor);
+    font-weight: 700;
+    font-size: 1.8em;   
+  }
+  
+  .navbar{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .navbar a, 
+  .dropdown a, 
+  .dropdown-menu a, 
+  .menu-dropdown a {
+      text-decoration: none !important;
+      border-bottom: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+  }
+  
+  .navbar a {
+      margin: 0 1rem;
+      color: var(--lightColor);
+      font-weight: 500;
+      font-size: 1.6rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+  }
+  
+  .navbar a:hover {
+      color: var(--secondaryColor);
+  }
+  
+  .dropdown-menu a {
+      display: block;
+      color: var(--primaryColor);
+      padding: 8px 15px;
+      transition: background-color 0.2s ease;
+      white-space: nowrap;
+      font-size: 15px;
+  }
+  
+  .dropdown-menu a:hover {
+      background-color: #f0f0f0;
+      border-radius: 5px;
+  }
+  
+  .dropdown a {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-bottom: 0.5rem;
+  }
+  
+  .dropdown a:hover {
+      color: var(--secondaryColor);
+  }
+  
+  .menu-dropdown a {
+      display: block;
+      color: var(--primaryColor);
+      padding: 8px 15px;
+      transition: background-color 0.2s ease;
+      white-space: nowrap;
+  }
+  
+  .menu-dropdown a:hover {
+      background-color: #f0f0f0;
+      border-radius: 5px;
+  }
+  
+  /* Dropdown menu styles */
+  .navbar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .navbar li {
+    position: relative;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.567);
+    min-width: 300px;
+    width: max-content;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(79, 76, 76, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    padding: 10px;
+    margin-top: 5px;
+    z-index: 1000;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .dropdown-menu li {
+    list-style: none;
+    padding: 5px 0;
+  }
+  
+  /* Menu icon dropdown styles */
+  .icons {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.567);
+    min-width: 160px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(79, 76, 76, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    padding: 10px;
+    margin-top: 5px;
+    z-index: 1000;
+  }
+  
+  .icons:hover .menu-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .menu-dropdown li {
+    list-style: none;
+    padding: 5px 0;
+  }
+  
+  #menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    color: var(--lightColor);
+  }
+  
+  #menu-btn:hover {
+    color: var(--secondaryColor);
+  }
+  
+  .icons div{
+    color: var(--primaryColor);
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+  }
+  
+  .icons div:hover{
+    color: var(--secondaryColor);
+  }
+
+.theme-switch-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px 0;
+}
+
+#menu-btn {
+	font-size: 24px;
+	cursor: pointer;
+	padding: 10px;
+	color: var(--lightColor);
+}
+
+#menu-btn:hover {
+	color: var(--secondaryColor);
+}
+
+.icons div{
+	color: var(--lightColor);
+	cursor: pointer;
+	font-size: 1.6rem;
+	margin-left: 2rem;
+}
+
+.icons div:hover{
+	color: var(--secondaryColor);
+}
+
+
+body {
+    background: url('contact/bg.jpg') ;
+}
+
+/* Contact Section */
+.contact {
+    margin-top: 70px;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--lightColor);
+}
+
+.contact .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: #ffffff;
+}
+
+/* Contact Container */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 25%;
+}
+
+.container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+/* Icons Styling */
+.container .contactInfo .box .icon {
+    width: 44px;
+    height: 44px;
+    background: var(--lightColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #2d1805;
+}
+
+/* Text Box Styling */
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: var(--lightColor);
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: #fff8f0;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-top: 80px;
+    width: 40%;
+    padding: 40px;
+    background: var(--lightColor);
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    color: #2d1805;
+    font-weight: 500;
+}
+
+/* Input Box Styling */
+.contact-form .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    border: #2d1805;
+    border-radius: 10px;
+    border-width:10px ;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.contact-form .inputbox input,
+.contact-form .inputbox textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: #2d180588;
+    border-radius: 5px;
+    border-style:solid ;
+
+    
+}
+
+span{
+    color: #2d1805;
+    font-size:20px ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+
+/* Submit Button */
+.contact-form .inputbox input[type="submit"] {
+    width: 100px;
+    background: var(--lightColor);
+    color: #2c211b;
+    border: 2px solid;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/*nav*/
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    /* background: var(--primaryColor); */
+    color: var(--lightColor);
+}
+
+.nav-left h2 {
+    font-size: 24px;
+    color: white;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+#theme-switch {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; 
+}
+
+/* #theme-switch svg {
+    fill: #2d1805;
+} */
+.sun-icon,
+.moon-icon {
+    fill: #3E2A27 !important; /* بني غامق */
+}
+
+/* Light/Dark Mode Toggle */
+#theme-switch svg:first-child {
+    display: none;
+}
+
+.dark #theme-switch svg:last-child {
+    display: none;
+}
+
+.dark #theme-switch svg:first-child {
+    display: block;
+}
+
+/*footer*/
+footer {
+    background-color: var(--primaryColor);
+    color:white;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-content {
+    max-width: 800px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+
+/* Theme switch button */
+.theme-switch-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    /* fill: #2c211b!important; */
+}
+#theme-switch svg{
+    fill: #3E2A27 !important;
+}
+.theme-switch-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.theme-switch-btn svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+
+}
+
+
+
+/* ==== Dark Mode Styles ==== */
+
+
+/* فورم التواصل */
+body.dark-mode .contact-form {
+    background-color: #5C4033; /* بني غامق */
+}
+
+/* الفوتر */
+body.dark-mode .footer {
+    background-color: #5C4033; /* بني غامق */
+    color: #f5e8d7;
+}
+
+/* الصناديق داخل .contactInfo */
+body.dark-mode .contactInfo .box {
+    background-color: transparent; /* بني غامق */
+}
+
+/* الأيقونات */
+body.dark-mode .contactInfo .box .icon i {
+    color: #f5e8d7; /* أيقونات بيج فاتح */
+}
+body.dark-mode .contactInfo .box .icon  {
+    background: #5C4033; /* أيقونات بيج فاتح */
+}
+
+body.dark-mode .contact-form h2,
+body.dark-mode .contact-form span,
+body.dark-mode .contact-form label {
+    color:#f5e8d7; 
+}
+/* .sun-icon {
+    fill: #3E2A47 !important; /* اللون البني الغامق 
+} */
+
+/* .moon-icon {
+    fill: #3E2A47 !important; /* اللون البني الغامق 
+} */
+
+/* Search Container */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #search-icon {
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    color: #2d1805;
+  }
+  
+  #search-bar {
+    width: 0;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid var(--secondaryColor);
+    border-radius: 20px;
+    transition: width 0.4s ease-in-out, opacity 0.3s ease;
+    opacity: 0;
+    outline: none;
+  }
+  
+  
+  #search-bar.active {
+    width: 300px;
+    opacity: 1;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  margin-right: 5px;
+
+  }
+
+.moon-icon{
+    fill: #3E2A27 !important ;
+}
+  
+
